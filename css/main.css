@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: consolas;
+}
+
+body {
+  background-color: #2b2a2a;
+  color: white;
+}
+
+button {
+  background-color: #2b2a2a;
+  color: white;
+  font-size: 2vh;
+}
+
+button:hover {
+  color: #ffcc26;
+  border: 2px solid white;
+  background-color: #111111;
+}
+
+.header {
+  height: 120px;
+  background-color: #111111;
+}
+
+.header__list {
+  height: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__list__options {
+  width: 45%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.header__list__options input {
+  visibility: hidden;
+  float: left;
+}
+
+.header__list__options div:nth-child(1) {
+  padding: 0 50px;
+  text-align: right;
+}
+
+.header__list__options input[type="radio"]:checked + label {
+  color: #ffcc26;
+  padding: 0.5vh 0.5vw;
+  border: 1px solid white;
+}
+
+.header__list__buttons {
+  width: 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header__list__buttons button {
+  margin: 2px 0.9vw;
+  width: 35%;
+  height: 70%;
+}
+
+.header__list__controller {
+  width: 30%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 3vh;
+  text-align: center;
+  margin: 20px;
+  margin-right: 60px;
+}
+
+.header__list li {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.maincontainer {
+  width: 85%;
+  margin: 10vh auto;
+  text-align: center;
+}
+
+.maincontainer__sortvisual {
+  height: 70vh;
+  padding: 0 2px;
+  background-color: #111111;
+  border-bottom: 2px solid white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.maincontainer__sortvisual__arraybar {
+  overflow: hidden;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: #2d88c4;
+  color: transparent;
+}
+/*# sourceMappingURL=main.css.map */

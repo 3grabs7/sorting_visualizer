@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Me Up</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <ul class="header__list">
+            <li class=header__list__options>
+                <div class="header__list_options_button">
+                    <label>Choose Sorting Algorithm</label>
+                </div>
+                
+                <div class="header__list_options_button">
+                    <input type="radio" id="merge" name="sort" value="merge" checked>
+                    <label for="merge">Merge</label>
+                </div>
+                <div class="header__list_options_button">
+                    <input type="radio" id="quick" name="sort" value="quick">
+                    <label for="quick">Quick</label>
+                </div>
+                <div class="header__list_options_button">
+                    <input type="radio" id="heap" name="sort" value="heap">
+                    <label for="heap">Heap</label>
+                </div>
+                <div class="header__list_options_button">
+                    <input type="radio" id="bubble" name="sort" value="bubble">
+                    <label for="bubble">Bubble</label>
+                </div>
+            </li>
+            <li class="header__list__buttons">
+                <button id="generatearray">
+                    Generate Random Array
+                </button>
+                <button id="runsort">
+                    Sort
+                </button>
+            </li>
+            <li class="header__list__controller">
+                <label for="speed">Speed</label>
+                <input name="speed" type="range" id="speedrange" min="1" max="500">
+                <label for="size">Size</label>
+                <input name="size" type="range" id="sizerange" min="10" max="300">
+            </li>
+        </ul>
+    </header>
+
+    <div class="maincontainer">
+        <div class="maincontainer__sortvisual">
+
+        </div>
+    </div>
+// bättre invant vidrig än ovant välmående
+</body>
+<script src="./main.js"></script>
+</html>
