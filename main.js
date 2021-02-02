@@ -1,6 +1,6 @@
 let unsortedArray = [];
-let speed = 50;
-let size = 100;
+let speed = 250;
+let size = 245;
 
 document.getElementById("speedrange").addEventListener('input', (e)=>{
     speed = (500 - e.currentTarget.value);
@@ -8,6 +8,8 @@ document.getElementById("speedrange").addEventListener('input', (e)=>{
 
 document.getElementById('sizerange').addEventListener('input', (e)=>{
     size = e.currentTarget.value;
+    clearArray();
+    generateBlocks();
 })
 
 document.getElementById('generatearray').addEventListener('click', () => {
@@ -21,8 +23,7 @@ document.getElementById('runsort').addEventListener('click', () => {
         if(e.checked) {
             sortType = e.value;
         }
-    });
-    
+    });    
     switch (sortType) {
         case "bubble":
             bubbleSort();
@@ -67,7 +68,7 @@ function swap(el1, el2) {
     el1.style.transform = transform2;
     el2.style.transform = transform1;
 
-    // Wait for the transition to end!
+    // Wait for the transition to end
     window.requestAnimationFrame(function() {
       setTimeout(() => {
         container.insertBefore(el2, el1);
@@ -114,5 +115,5 @@ async function bubbleSort() {
 }
 
 generateBlocks();
-//bubbleSort();
+
 
